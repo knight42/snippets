@@ -5,8 +5,8 @@ main() {
 
     for d in */; do
         echo "* ${d%/}"
-        for f in "$d"*; do
-            echo "    * [${f#$d}]($f)"
+        for f in $(ls -A $d); do
+            echo "    * [$f]($d$f)"
         done
     done
 }
