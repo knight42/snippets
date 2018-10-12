@@ -9,4 +9,4 @@
 * redis
     * [README.md](redis/README.md)
 * travis
-    * [go-project.yml](travis/go-project.yml)
+    * [.travis.go-project.yml](travis/.travis.go-project.yml)
