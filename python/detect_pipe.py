@@ -7,11 +7,13 @@ import sys
 
 def main():
     if sys.stdin.isatty():
-        with open(sys.argv[1]) as fin:
-            data = fin.read()
+        fin = open(sys.argv[1])
     else:
         # pipe
-        data = sys.stdin.read()
+        fin = sys.stdin
+
+    with fin:
+        pass
     return 0
 
 
